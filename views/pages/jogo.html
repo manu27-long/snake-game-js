@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body onKeyDown="pegadirecao(event.keyCode);">
-
+<button onclick=reiniciar()">Reiniciar</button>
 <h2 align="center">Manuela Miranda</h2>
 
 <div id=principal></div>
@@ -49,6 +49,10 @@
         if(tecla==39)direcao=2;
         if(tecla==40)direcao=3;
     }
+     function reiniciar(){
+     location.reload();
+     document.addEventListener('bt').focus();
+}
 </script>
 </body>
 </html>

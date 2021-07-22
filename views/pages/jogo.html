@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <body onKeyDown="pegadirecao(event.keyCode);">
-<button onclick=reiniciar()">Reiniciar</button>
+<button onclick="reiniciar()">Reiniciar</button> 
 <h2 align="center">Manuela Miranda</h2>
-<div id="pontos">"</div>
+<div id="pontos"></div>
+<button onclink="velocidade()">velocidade</button>
 <div id=principal></div>
 <script>
     tabuleiro="<table align=center border=1>";
@@ -44,6 +45,9 @@
         if(vivo)setTimeout('anda()',300);
         else alert('Fim de jogo');
     }
+     function velocidade(){
+       setTimeout('anda()',700);
+}
     anda();
     function pegadirecao(tecla){
         /*alert(tecla);*/
@@ -54,7 +58,7 @@
     }
      function reiniciar(){
      location.reload();
-     document.addEventListener('bt').focus();
+     document.addEventListener('bt');
 }
 </script>
 </body>

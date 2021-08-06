@@ -43,11 +43,11 @@
         if(cobra[0][0]<0||cobra[0][1]<0||cobra[0][0]>9||cobra[0][1]>9)vivo=false;
         document.getElementById('td'+cobra[0][0]+'_'+cobra[0][1]).style.background="#333333";
         document.getElementById('td'+mx+'_'+my).style.background="#ff3333";
-        if(vivo)setTimeout('anda()',300);
+        if(vivo)setTimeout('anda()',700);
         else alert('Fim de jogo');
     }
      function velocidade(){
-       setTimeout('anda()',100);
+       setTimeout('anda()',50);
 }
     anda();
     function pegadirecao(tecla){
